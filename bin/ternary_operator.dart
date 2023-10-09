@@ -8,7 +8,4 @@ void main() {
     ucapan = "Silahkan Coba Lagi";
   }
 
-// pakai ternary operator
-  var nilai = 75;
-  var ucapan = nilai >= 75 ? "Selamat Anda  Lulus" : "Silahkan Coba Lagi";
 }

@@ -20,10 +20,6 @@ void main() {
 
   var guestName = guest ?? "Guest";
 
-  // konversi secara paksa
-  int? nullableNumber;
-  var number = nullableNumber!;
-
   // mengakses nullable member
   int? intNumber;
   double? doubleNumber = intNumber?.toDouble();

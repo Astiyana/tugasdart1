@@ -6,9 +6,6 @@ void main() {
   print(firstName);
   print(lastName);
 
-// string expression
-String firstName = "ASTI";
-String lastName = "YANA";
 
 var fullName = "$firstName ${lastName}";
 

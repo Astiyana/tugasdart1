@@ -2,6 +2,6 @@ void main () {
   int number1;
   int? number2;
 
-  print(number1); // error
-  print(number2); // null
+  print(1); // error
+  print(2); // null
 }

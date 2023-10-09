@@ -3,8 +3,6 @@ void main() {
   var names = <String>{};
   final numberDouble = <String>{};
 
-  // manipulasi set
-  var names = <String>{};
   names.add("ASTI");
   names.add("YANA");
   names.add("RAHAYU");
