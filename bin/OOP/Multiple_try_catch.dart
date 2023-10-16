@@ -1,3 +1,5 @@
+import 'Validation.dart';
+
 class Validation  {
   static void validate(String username, String password) {
     if (username == ""){
@@ -8,7 +10,7 @@ class Validation  {
     
   }
 
-  static void validdate(String username, String password) {
+static void validdate(String username, String password) {
     if (username == "") {
       throw ValidationException("Username is blank");
     } else if (password == "") {
@@ -23,17 +25,12 @@ class ValidationException implements Exception {
 
   ValidationException(this.message);
 }
-
 void main() {
   try {
-    Validation.validate("Astiyana", "salah");
-  } on ValidationException catch (exception, stackTrace) {
+    Validation.validate("Asti", "Salah");
+  } on ValidationException catch (exception) {
     print("Error : ${exception.message}");
-    print("Stack Trace :${stackTrace.toString()}");
-  } catch (exception, stackTrace) {
-    print("Error : ${exception.toString}");
-    print("Stack Trace : ${stackTrace.toString()}");
-  } finally {
-    print("Program Selesai");
-  } 
+  } on Exception catch (exception){
+    print("Error : ${exception.toString()}");
+  }
 }

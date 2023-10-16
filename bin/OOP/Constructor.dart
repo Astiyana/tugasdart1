@@ -4,6 +4,13 @@ class Person {
   String? address;
   String country = "Indonesia";
 
+Person.withName(this.name){
+    var person = Person.withName("Astiyana");
+  }
+  Person.withAddress(this.address){
+var person2 = Person.withAddress("Bati-Bati");
+  }
+
   Person(String paramName, String paramAddress) {
     name = paramName;
     address = paramAddress;
@@ -16,5 +23,8 @@ class Person {
     person.sayHello("Asti");
   }
 
+}
+void  main () {
+  print("Hello my name is Astiyana");
 }
 

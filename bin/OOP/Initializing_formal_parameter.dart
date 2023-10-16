@@ -3,5 +3,11 @@ class Person {
   String? address;
   String country = "Indonesia";
 
-  Person(this.name, this.address);
+  Person(this.name, this.address){
+    
+  }
+  
+}
+void main() {
+  print(Person("Astiyana", "Bati-Bati"));
 }
